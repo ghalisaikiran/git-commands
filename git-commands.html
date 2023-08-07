@@ -2,35 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Git Commands</title>
   </head>
   <body>
-    <p>Unstage added files: git restore --staged [FILENAME.extension]</p>
+    <p>Unstage added files: git restore --staged [FILE_NAME.extension]</p>
     <p>Restore to a previous commit: git restore [commit]</p>
-    <p>Stash uncommitted changes: git stash</p>
-    <p>Unstash uncommitted changes: git stash pop</p>
+    <p>Stash uncommited changes: git stash</p>
+    <p>untsash uncommited changes: git stash pop</p>
     <p>
       Link your local project to a git repository: git remote add origin
       [REPOSITORY_URL]
     </p>
-    <p>
-      If a branch does not exists in git repository and you want to create
-      branch and push it: git push --set-upstream origin [BRANCH_NAME]
-    </p>
     <p>Create New Branch in local: git branch [BRANCH_NAME]</p>
     <p>
-      How to revert code in repository without losing it? 1. Go to previous
-      commit: git reset [PREV_COMMIT] 2. Stash the commit that is causing issue,
-      git stash 3. Now, force push the prev commit to repository: git push -f 4.
-      Now, get back our changes in local: git stash pop.
+      If a branch does not exists in git reposiory and you want to create branch
+      and push it: git push --set-upstream origin [BRANCH_NAME]
+    </p>
+    <p>
+      How to revert code in repository without losing it? <br />
+      1. go to previous commit: git reset [PREV_COMMIT] <br />
+      2. stash the commit that is causing issue: git stash <br />
+      3. now, for push the prev commit to reposiory: git push -f <br />
+      4. now, get back our changes in local: git stash pop
     </p>
     <p>Fetch all branches: git fetch</p>
-    <p>Fetch all branches including deleted branches: git fetch -all -prune</p>
+    <p>Fetch all branches incluing deleted branches: git fetch --all --prune</p>
     <p>
-      Merge all un pushed commits into a single commit - 1. git reset --soft
-      HEAD~2 (number of commits to be merged) 2. git commit -m "new commit
-      message" 3. git push -f
+      merge all un pushed commits into a single commit - <br />
+      1. git reset --soft HEAD~2 (number of commits to be merged)<br />
+      2. git commit -m "new commit message"<br />
+      3. git push -f<br />
     </p>
   </body>
 </html>
